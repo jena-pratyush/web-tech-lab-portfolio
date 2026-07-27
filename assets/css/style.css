@@ -1,0 +1,315 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #141211;
+  background: #9ac690;
+  line-height: 1.5;
+}
+
+a {
+  color: #518566;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header,
+main,
+footer,
+section,
+article {
+  display: block;
+}
+
+.site-header,
+.app-header,
+.resume-header,
+.shop-header {
+  background: #30422f;
+  border-bottom: 1px solid #594d28;
+}
+
+.top-nav,
+.resume-nav,
+.shop-nav {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.brand,
+.shop-brand {
+  font-weight: bold;
+}
+
+.brand-mark {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.brand small {
+  display: block;
+  color: #3a9440;
+}
+
+.nav-actions,
+.shop-links,
+.resume-contact,
+.skill-list,
+.table-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hero,
+.app-hero,
+.shop-hero,
+.resume-hero,
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 25px 15px;
+}
+
+.hero-panel,
+.form-panel,
+.table-panel,
+.resume-section,
+.placeholder-card,
+.shop-summary,
+.offer-panel,
+.cart-panel,
+.product-card,
+.quiz-question,
+.calculator,
+.weather-card,
+.book-card {
+  background: #3d7c63;
+  border: 1px solid #87941f;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+.eyebrow,
+.section-heading p,
+.exercise-card p,
+.resume-summary,
+.shop-summary p {
+  color: #1b9310;
+}
+
+.primary-button,
+.cart-button,
+button,
+.back-link,
+.shop-links a,
+.nav-actions a {
+  display: inline-block;
+  padding: 8px 12px;
+  border: 1px solid #6e4736;
+  background: #569049;
+  color: #222222;
+  cursor: pointer;
+}
+
+.exercise-grid,
+.product-grid,
+.resume-grid,
+.weather-grid,
+.book-grid,
+.dashboard-grid,
+.crud-page,
+.shop-bottom {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.exercise-card {
+  display: block;
+  background: #496d44;
+  border: 1px solid #cccccc;
+  padding: 15px;
+  color: #222222;
+}
+
+.exercise-icon {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.shop-categories span,
+.product-tag,
+.product-note {
+  display: inline-block;
+  padding: 4px 8px;
+  border: 1px solid #cccccc;
+  background: #ffffff;
+}
+
+.product-image {
+  min-height: 90px;
+  margin-bottom: 10px;
+  border: 1px solid #cccccc;
+  background: #eeeeee;
+}
+
+.product-image img {
+  display: block;
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
+}
+
+.product-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.site-footer {
+  padding: 15px;
+  text-align: center;
+  background: #ffffff;
+  border-top: 1px solid #cccccc;
+}
+
+.resume-photo {
+  width: 600px;
+  height: 300px;
+  border: 1px solid #cccccc;
+  overflow: hidden;
+}
+
+.resume-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+form {
+  display: grid;
+  gap: 12px;
+}
+
+label {
+  display: grid;
+  gap: 5px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #999999;
+  font: inherit;
+}
+
+textarea {
+  min-height: 90px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+}
+
+th,
+td {
+  padding: 8px;
+  border: 1px solid #cccccc;
+  text-align: left;
+}
+
+.responsive-table {
+  overflow-x: auto;
+}
+
+.status-message,
+.quiz-result {
+  padding: 10px;
+  border: 1px solid #cccccc;
+  background: #ffffff;
+}
+
+.warning-text,
+.warning {
+  color: #8a1f11;
+}
+
+.success {
+  color: #176b2c;
+}
+
+.calculator-display input {
+  font-size: 24px;
+  text-align: right;
+}
+
+.calculator-keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.quiz-options {
+  display: grid;
+  gap: 8px;
+}
+
+.quiz-option {
+  display: block;
+}
+
+.placeholder-main,
+.auth-page,
+.content-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 25px 15px;
+}
+
+@media (max-width: 600px) {
+  .top-nav,
+  .resume-nav,
+  .shop-nav {
+    display: block;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+}
