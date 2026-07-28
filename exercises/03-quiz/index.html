@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 03 - Simple Quiz</title>
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <header class="quiz-header">
+    <nav class="resume-nav">
+      <a class="back-link" href="../../index.html">Back to portfolio</a>
+      <span>Exercise 03</span>
+    </nav>
+    <section class="quiz-hero">
+      <div>
+        <p class="eyebrow">HTML, CSS, JavaScript</p>
+        <h1>Simple Web Technology Quiz</h1>
+        <p>Answer all 20 questions and submit the quiz to view your final score.</p>
+      </div>
+      <aside class="quiz-score-card">
+        <span>Total Questions</span>
+        <strong>20</strong>
+        <p>Each correct answer carries one mark.</p>
+      </aside>
+    </section>
+  </header>
+
+  <main class="quiz-page">
+    <section class="quiz-toolbar">
+      <div>
+        <h2>Quiz Questions</h2>
+        <p>Select one answer for every question before submitting.</p>
+      </div>
+      <div class="quiz-progress" id="quizProgress">Answered: 0/20</div>
+    </section>
+
+    <form class="quiz-form" id="quizForm">
+      <div class="quiz-list" id="quizList"></div>
+      <section class="quiz-actions">
+        <button class="cart-button" type="submit">Submit Quiz</button>
+        <button class="secondary-button" type="button" id="resetQuiz">Reset</button>
+      </section>
+    </form>
+
+    <section class="quiz-result" id="quizResult" aria-live="polite"></section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
