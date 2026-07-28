@@ -6,12 +6,12 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: #141211;
-  background: #9ac690;
+  background: #0D1117;
   line-height: 1.5;
 }
 
 a {
-  color: #518566;
+  color: #161b22;
   text-decoration: none;
 }
 
@@ -129,6 +129,7 @@ h3 {
 
 .primary-button,
 .cart-button,
+.remove-button,
 button,
 .back-link,
 .shop-links a,
@@ -139,6 +140,19 @@ button,
   background: #569049;
   color: #222222;
   cursor: pointer;
+}
+
+.remove-button {
+  margin-left: 8px;
+}
+
+.buy-button {
+  margin-top: 10px;
+}
+
+.order-message {
+  margin-top: 10px;
+  font-weight: bold;
 }
 
 .exercise-grid,
