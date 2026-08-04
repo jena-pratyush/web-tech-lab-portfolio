@@ -5,7 +5,7 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  color: #141211;
+  color: #ffffff;
   background: #0D1117;
   line-height: 1.5;
 }
@@ -30,7 +30,8 @@ article {
 .site-header,
 .app-header,
 .resume-header,
-.shop-header {
+.shop-header,
+.quiz-header {
   background: #30422f;
   border-bottom: 1px solid #594d28;
 }
