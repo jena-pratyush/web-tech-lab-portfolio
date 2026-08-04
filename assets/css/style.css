@@ -38,7 +38,8 @@ article {
 
 .top-nav,
 .resume-nav,
-.shop-nav {
+.shop-nav 
+.quiz-nav{
   max-width: 1000px;
   margin: 0 auto;
   padding: 15px;
