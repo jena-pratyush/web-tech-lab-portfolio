@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 04 - Online Calculator</title>
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <header class="calculator-header">
+    <nav class="calculator-nav">
+      <a class="back-link" href="../../index.html">Back to portfolio</a>
+      <span>Exercise 04</span>
+    </nav>
+    <section class="calculator-hero">
+      <div>
+        <p class="eyebrow">HTML, CSS, JavaScript</p>
+        <h1>Online Scientific Calculator</h1>
+        <p>Perform basic arithmetic and scientific calculations in one clean interface.</p>
+      </div>
+      <aside class="calculator-feature-card">
+        <span>Functions</span>
+        <strong>Basic + Scientific</strong>
+        <p>Includes sin, cos, tan, log, square root, power, and percentage.</p>
+      </aside>
+    </section>
+  </header>
+
+  <main class="calculator-page">
+    <section class="calculator-shell" aria-label="Calculator">
+      <div class="calculator-display">
+        <div class="calculator-history" id="history">Ready</div>
+        <input type="text" id="display" value="0" aria-label="Calculator display" readonly>
+      </div>
+
+      <div class="calculator-keys">
+        <button type="button" data-action="clear" class="danger">AC</button>
+        <button type="button" data-action="delete">DEL</button>
+        <button type="button" data-action="percent">%</button>
+        <button type="button" data-value="/" class="operator">/</button>
+
+        <button type="button" data-action="sqrt">sqrt</button>
+        <button type="button" data-action="square">x2</button>
+        <button type="button" data-action="power">x^y</button>
+        <button type="button" data-value="*" class="operator">x</button>
+
+        <button type="button" data-action="sin">sin</button>
+        <button type="button" data-action="cos">cos</button>
+        <button type="button" data-action="tan">tan</button>
+        <button type="button" data-value="-" class="operator">-</button>
+
+        <button type="button" data-action="log">log</button>
+        <button type="button" data-value="(">(</button>
+        <button type="button" data-value=")">)</button>
+        <button type="button" data-value="+" class="operator">+</button>
+
+        <button type="button" data-value="7">7</button>
+        <button type="button" data-value="8">8</button>
+        <button type="button" data-value="9">9</button>
+        <button type="button" data-action="pi">pi</button>
+
+        <button type="button" data-value="4">4</button>
+        <button type="button" data-value="5">5</button>
+        <button type="button" data-value="6">6</button>
+        <button type="button" data-action="e">e</button>
+
+        <button type="button" data-value="1">1</button>
+        <button type="button" data-value="2">2</button>
+        <button type="button" data-value="3">3</button>
+        <button type="button" data-action="equals" class="equals">=</button>
+
+        <button type="button" data-value="0" class="zero">0</button>
+        <button type="button" data-value=".">.</button>
+      </div>
+    </section>
+
+    <section class="calculator-notes">
+      <article>
+        <h2>Basic Functions</h2>
+        <p>Addition, subtraction, multiplication, division, percentage, decimal numbers, and brackets.</p>
+      </article>
+      <article>
+        <h2>Scientific Functions</h2>
+        <p>Square root, square, power, trigonometric functions, logarithm, pi, and Euler's number.</p>
+      </article>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -31,7 +31,8 @@ article {
 .app-header,
 .resume-header,
 .shop-header,
-.quiz-header {
+.quiz-header,
+.calculator-header {
   background: #30422f;
   border-bottom: 1px solid #594d28;
 }
@@ -77,6 +78,8 @@ article {
 .app-hero,
 .shop-hero,
 .resume-hero,
+.quiz-hero,
+.calculator-hero,
 main {
   max-width: 1000px;
   margin: 0 auto;
@@ -97,7 +100,7 @@ main {
 .weather-card,
 .book-card {
   background: #3d7c63;
-  border: 1px solid #87941f;
+  border: 1px solid #ffffff;
   padding: 15px;
   margin-bottom: 15px;
 }
@@ -155,6 +158,23 @@ button,
 .order-message {
   margin-top: 10px;
   font-weight: bold;
+}
+
+.quiz-option {
+  padding: 8px;
+  border: 1px solid transparent;
+}
+
+.quiz-option.correct-option {
+  background: #d8f5d1;
+  border-color: #247a2b;
+  color: #123d16;
+}
+
+.quiz-option.wrong-option {
+  background: #ffd7d7;
+  border-color: #9b1c1c;
+  color: #5c1010;
 }
 
 .exercise-grid,
@@ -321,7 +341,8 @@ td {
 @media (max-width: 600px) {
   .top-nav,
   .resume-nav,
-  .shop-nav {
+  .shop-nav, 
+  .quiz-nav{
     display: block;
   }
 
