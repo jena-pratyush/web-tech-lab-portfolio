@@ -190,6 +190,17 @@ button,
   gap: 15px;
 }
 
+/* Make the employee table page disproportionate: form narrower, table wider */
+.crud-page {
+  grid-template-columns: 1fr 2fr;
+}
+
+@media (max-width: 700px) {
+  .crud-page {
+    grid-template-columns: 1fr;
+  }
+}
+
 .exercise-card {
   display: block;
   background: #496d44;
@@ -271,27 +282,33 @@ textarea {
   padding: 8px;
   border: 1px solid #999999;
   font: inherit;
+  background: #eaf7ef;
+  color: #14331f;
 }
 
 textarea {
   min-height: 90px;
 }
 
+/* ---- Table styling ---- */
+.responsive-table {
+  overflow-x: auto;
+  width: 100%;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
-  background: #ffffff;
+  background: #3d7c63;
 }
 
 th,
 td {
-  padding: 8px;
-  border: 1px solid #cccccc;
+  padding: 8px 12px;
+  border: 1px solid #ffffff;
   text-align: left;
-}
-
-.responsive-table {
-  overflow-x: auto;
+  color: #ffffff;
+  white-space: nowrap;
 }
 
 .status-message,
@@ -299,6 +316,7 @@ td {
   padding: 10px;
   border: 1px solid #cccccc;
   background: #ffffff;
+  color: #176b2c;
 }
 
 .warning-text,
