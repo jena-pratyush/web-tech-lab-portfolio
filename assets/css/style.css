@@ -39,13 +39,16 @@ article {
 
 .top-nav,
 .resume-nav,
-.shop-nav 
-.quiz-nav{
+.shop-nav,
+.quiz-nav,
+.calculator-nav,
+.site-mini-nav {
   max-width: 1000px;
   margin: 0 auto;
   padding: 15px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 15px;
 }
 
