@@ -1,22 +1,43 @@
+:root {
+  --bg-dark: #0c0c0c;
+  /* Luxe deep black */
+  --bg-surface: #161616;
+  /* Dark graphite surface */
+  --bg-header: #1b1b1b;
+  /* Very dark gray header */
+  --text-main: #ffffff;
+  /* Pure crisp white */
+  --text-muted: #8c8c8c;
+  /* Posh silver-gray */
+  --accent: #c5a880;
+  /* Refined champagne gold */
+  --accent-hover: #e5d4bc;
+  /* Soft glow ivory gold */
+  --border-color: #2d2d2d;
+  /* Ultra-sharp subtle border */
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #ffffff;
-  background: #0D1117;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: var(--text-main);
+  background: var(--bg-dark);
   line-height: 1.5;
 }
 
 a {
-  color: #161b22;
+  color: var(--accent);
   text-decoration: none;
+  transition: color 0.15s ease;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: var(--accent-hover);
+  text-decoration: none;
 }
 
 header,
@@ -33,8 +54,8 @@ article {
 .shop-header,
 .quiz-header,
 .calculator-header {
-  background: #30422f;
-  border-bottom: 1px solid #594d28;
+  background: var(--bg-header);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .top-nav,
@@ -55,16 +76,22 @@ article {
 .brand,
 .shop-brand {
   font-weight: bold;
+  letter-spacing: 0.5px;
+  color: var(--text-main);
 }
 
 .brand-mark {
   display: inline-block;
   margin-right: 8px;
+  color: var(--accent);
 }
 
 .brand small {
   display: block;
-  color: #3a9440;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
 }
 
 .nav-actions,
@@ -102,9 +129,9 @@ main {
 .calculator,
 .weather-card,
 .book-card {
-  background: #3d7c63;
-  border: 1px solid #ffffff;
-  padding: 15px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  padding: 20px;
   margin-bottom: 15px;
 }
 
@@ -117,14 +144,18 @@ p {
 
 h1 {
   font-size: 32px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
 }
 
 h2 {
   font-size: 24px;
+  font-weight: 500;
 }
 
 h3 {
   font-size: 18px;
+  font-weight: 500;
 }
 
 .eyebrow,
@@ -132,7 +163,11 @@ h3 {
 .exercise-card p,
 .resume-summary,
 .shop-summary p {
-  color: #1b9310;
+  color: var(--accent);
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 600;
 }
 
 .primary-button,
@@ -143,11 +178,27 @@ button,
 .shop-links a,
 .nav-actions a {
   display: inline-block;
-  padding: 8px 12px;
-  border: 1px solid #6e4736;
-  background: #569049;
-  color: #222222;
+  padding: 8px 16px;
+  border: 1px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.8px;
   cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.primary-button:hover,
+.cart-button:hover,
+.remove-button:hover,
+button:hover,
+.back-link:hover,
+.shop-links a:hover,
+.nav-actions a:hover {
+  background: var(--accent);
+  color: #0c0c0c;
 }
 
 .remove-button {
@@ -169,15 +220,15 @@ button,
 }
 
 .quiz-option.correct-option {
-  background: #d8f5d1;
+  background: #1c3623;
   border-color: #247a2b;
-  color: #123d16;
+  color: #d8f5d1;
 }
 
 .quiz-option.wrong-option {
-  background: #ffd7d7;
+  background: #3d1c1c;
   border-color: #9b1c1c;
-  color: #5c1010;
+  color: #ffd7d7;
 }
 
 .exercise-grid,
@@ -206,16 +257,22 @@ button,
 
 .exercise-card {
   display: block;
-  background: #496d44;
-  border: 1px solid #cccccc;
-  padding: 15px;
-  color: #222222;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  padding: 20px;
+  color: var(--text-main);
+  transition: border-color 0.15s ease;
+}
+
+.exercise-card:hover {
+  border-color: var(--accent);
 }
 
 .exercise-icon {
   display: inline-block;
   margin-bottom: 10px;
   font-weight: bold;
+  color: var(--accent);
 }
 
 .shop-categories span,
@@ -223,15 +280,15 @@ button,
 .product-note {
   display: inline-block;
   padding: 4px 8px;
-  border: 1px solid #cccccc;
-  background: #5db369;
+  border: 1px solid var(--border-color);
+  background: var(--bg-dark);
 }
 
 .product-image {
   min-height: 90px;
   margin-bottom: 10px;
-  border: 1px solid #cccccc;
-  background: #eeeeee;
+  border: 1px solid var(--border-color);
+  background: var(--bg-dark);
 }
 
 .product-image img {
@@ -249,23 +306,43 @@ button,
 }
 
 .site-footer {
-  padding: 15px;
+  padding: 25px 15px;
   text-align: center;
-  background: #ffffff;
-  border-top: 1px solid #cccccc;
+  background: var(--bg-header);
+  border-top: 1px solid var(--border-color);
+  color: var(--text-muted);
+}
+
+.resume-hero {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 15px;
+}
+
+@media (max-width: 1768px) {
+  .resume-hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
 }
 
 .resume-photo {
-  width: 600px;
-  height: 300px;
-  border: 1px solid #cccccc;
+  width: 220px;
+  height: 320px;
+  border: 1px solid var(--border-color);
   overflow: hidden;
+  flex-shrink: 0;
 }
 
 .resume-photo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center top;
 }
 
 form {
@@ -276,17 +353,29 @@ form {
 label {
   display: grid;
   gap: 5px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
 }
 
 input,
 select,
 textarea {
   width: 100%;
-  padding: 8px;
-  border: 1px solid #999999;
+  padding: 10px;
+  border: 1px solid var(--border-color);
   font: inherit;
-  background: #eaf7ef;
-  color: #14331f;
+  background: var(--bg-dark);
+  color: var(--text-main);
+  transition: border-color 0.15s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--accent);
+  outline: none;
 }
 
 textarea {
@@ -302,33 +391,42 @@ textarea {
 table {
   width: 100%;
   border-collapse: collapse;
-  background: #3d7c63;
+  background: var(--bg-surface);
 }
 
 th,
 td {
-  padding: 8px 12px;
-  border: 1px solid #ffffff;
+  padding: 10px 14px;
+  border: 1px solid var(--border-color);
   text-align: left;
-  color: #ffffff;
+  color: var(--text-main);
   white-space: nowrap;
+}
+
+th {
+  background: var(--bg-header);
+  color: var(--accent);
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.8px;
+  font-weight: 600;
 }
 
 .status-message,
 .quiz-result {
-  padding: 10px;
-  border: 1px solid #cccccc;
-  background: #ffffff;
-  color: #176b2c;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-surface);
+  color: var(--accent);
 }
 
 .warning-text,
 .warning {
-  color: #8a1f11;
+  color: #f87171;
 }
 
 .success {
-  color: #176b2c;
+  color: var(--accent);
 }
 
 .calculator-display input {
@@ -360,10 +458,11 @@ td {
 }
 
 @media (max-width: 600px) {
+
   .top-nav,
   .resume-nav,
-  .shop-nav, 
-  .quiz-nav{
+  .shop-nav,
+  .quiz-nav {
     display: block;
   }
 
