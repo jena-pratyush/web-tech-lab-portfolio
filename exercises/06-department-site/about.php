@@ -9,7 +9,7 @@
 <body>
   <nav class="site-mini-nav">
     <a class="back-link" href="index.php">Department Home</a>
-    <a class="back-link" href="../../index.html">Portfolio</a>
+    <a class="back-link" href="https://jena-pratyush.github.io/web-tech-lab-portfolio/">Portfolio</a>
   </nav>
   <main class="content-page">
     <section class="form-panel wide-panel">

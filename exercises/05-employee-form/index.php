@@ -60,7 +60,7 @@ if ($result) {
 <body>
   <header class="app-header">
     <nav class="resume-nav">
-      <a class="back-link" href="../../index.html">Back to portfolio</a>
+      <a class="back-link" href="https://jena-pratyush.github.io/web-tech-lab-portfolio/">Back to portfolio</a>
       <span>Exercise 05</span>
     </nav>
     <section class="app-hero">
