@@ -38,5 +38,18 @@ mysqli_query($conn, "CREATE TABLE IF NOT EXISTS `employees` (
   `department` VARCHAR(100) NOT NULL,
   `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 )");
-?>
+// This will be used when uploading infinityfree hosting
 
+/*
+$host = "sql311.infinityfree.com";
+$username = "if0_42743936";
+$password = "YOUR_DB_PASSWORD_HERE";
+$database = "if0_42743936_portfolio";
+
+$conn = mysqli_connect($host, $username, $password, $database);
+
+if (!$conn) {
+    die("Database Connection Failed: " . mysqli_connect_error());
+}
+*/
+?>
