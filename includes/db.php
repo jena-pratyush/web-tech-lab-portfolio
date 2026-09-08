@@ -30,12 +30,30 @@ if (!$conn) {
 mysqli_query($conn, "CREATE DATABASE IF NOT EXISTS `employee_details_db`");
 mysqli_select_db($conn, $database);
 
-mysqli_query($conn, "CREATE TABLE IF NOT EXISTS `employees` (
+mysqli_query($conn, "CREATE TABLE IF NOT EXISTS `ex05_employees` (
   `id` INT AUTO_INCREMENT PRIMARY KEY,
   `name` VARCHAR(100) NOT NULL,
   `email` VARCHAR(100) NOT NULL,
   `phone` VARCHAR(20) NOT NULL,
   `department` VARCHAR(100) NOT NULL,
+  `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)");
+
+mysqli_query($conn, "CREATE TABLE IF NOT EXISTS `ex06_users` (
+  `id` INT AUTO_INCREMENT PRIMARY KEY,
+  `name` VARCHAR(100) NOT NULL,
+  `email` VARCHAR(100) NOT NULL UNIQUE,
+  `password` VARCHAR(255) NOT NULL,
+  `role` VARCHAR(50) NOT NULL,
+  `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)");
+
+mysqli_query($conn, "CREATE TABLE IF NOT EXISTS `ex07_users` (
+  `id` INT AUTO_INCREMENT PRIMARY KEY,
+  `name` VARCHAR(100) NOT NULL,
+  `email` VARCHAR(100) NOT NULL UNIQUE,
+  `password` VARCHAR(255) NOT NULL,
+  `role` VARCHAR(50) NOT NULL,
   `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 )");
 // This will be used when uploading infinityfree hosting

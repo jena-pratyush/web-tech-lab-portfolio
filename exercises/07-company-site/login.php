@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $email = trim($_POST["email"]);
     $password = $_POST["password"];
 
-    $stmt = mysqli_prepare($conn, "SELECT id, name, password, role FROM users WHERE email = ? AND role IN ('admin', 'employee')");
+    $stmt = mysqli_prepare($conn, "SELECT id, name, password, role FROM ex07_users WHERE email = ? AND role IN ('admin', 'employee')");
     mysqli_stmt_bind_param($stmt, "s", $email);
     mysqli_stmt_execute($stmt);
     $result = mysqli_stmt_get_result($stmt);

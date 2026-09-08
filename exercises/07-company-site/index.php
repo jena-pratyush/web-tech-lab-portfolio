@@ -38,7 +38,7 @@
       </article>
       <article>
         <h2>Database</h2>
-        <p>User details are stored in the shared MySQL users table.</p>
+        <p>User details are stored in the shared MySQL ex07_users table.</p>
       </article>
     </section>
   </main>

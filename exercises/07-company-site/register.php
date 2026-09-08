@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $password = password_hash($_POST["password"], PASSWORD_DEFAULT);
     $role = $_POST["role"];
 
-    $stmt = mysqli_prepare($conn, "INSERT INTO users (name, email, password, role) VALUES (?, ?, ?, ?)");
+    $stmt = mysqli_prepare($conn, "INSERT INTO ex07_users (name, email, password, role) VALUES (?, ?, ?, ?)");
     mysqli_stmt_bind_param($stmt, "ssss", $name, $email, $password, $role);
     $message = mysqli_stmt_execute($stmt) ? "Company user registered successfully." : "Registration failed. Email may already exist.";
 }

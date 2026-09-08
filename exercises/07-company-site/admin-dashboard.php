@@ -5,7 +5,7 @@ if (!isset($_SESSION["company_user"]) || $_SESSION["company_user"]["role"] !== "
     exit;
 }
 require_once "../../includes/db.php";
-$employees = mysqli_query($conn, "SELECT name, email, created_at FROM users WHERE role = 'employee' ORDER BY id DESC");
+$employees = mysqli_query($conn, "SELECT name, email, created_at FROM ex07_users WHERE role = 'employee' ORDER BY id DESC");
 ?>
 <!DOCTYPE html>
 <html lang="en">

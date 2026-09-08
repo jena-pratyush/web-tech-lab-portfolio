@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if ($name && $email && $phone && $department) {
         $stmt = mysqli_prepare(
             $conn,
-            "INSERT INTO employees (name, email, phone, department) VALUES (?, ?, ?, ?)"
+            "INSERT INTO ex05_employees (name, email, phone, department) VALUES (?, ?, ?, ?)"
         );
 
         if ($stmt) {
@@ -40,7 +40,7 @@ if (isset($_GET["saved"])) {
 }
 
 // Fetch all employees to display in the table
-$result = mysqli_query($conn, "SELECT id, name, email, phone, department FROM employees ORDER BY id DESC");
+$result = mysqli_query($conn, "SELECT id, name, email, phone, department FROM ex05_employees ORDER BY id DESC");
 if ($result) {
     while ($row = mysqli_fetch_assoc($result)) {
         $employees[] = $row;
