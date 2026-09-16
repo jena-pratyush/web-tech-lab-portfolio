@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 09 - Weather Ajax</title>
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <header class="app-header">
+    <nav class="resume-nav">
+      <a class="back-link" href="../../index.html">Back to portfolio</a>
+      <span>Exercise 09</span>
+    </nav>
+    <section class="app-hero">
+      <div>
+        <p class="eyebrow">Ajax + JSON</p>
+        <h1>Weather Data Fetch</h1>
+        <p>Fetch weather details from a JSON endpoint and display them dynamically on the webpage.</p>
+      </div>
+      <button class="primary-button button-reset" id="loadWeather" type="button">Load Weather</button>
+    </section>
+  </header>
+
+  <main class="content-page">
+    <section class="weather-grid" id="weatherGrid" aria-live="polite">
+      <article class="form-panel wide-panel">
+        <h2>Weather API Output</h2>
+        <p class="muted-text">Click Load Weather to fetch data from <code>weather.json</code>.</p>
+      </article>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

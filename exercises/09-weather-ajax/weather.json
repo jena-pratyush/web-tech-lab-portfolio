@@ -1,0 +1,28 @@
+{
+  "city": "Puducherry",
+  "country": "India",
+  "updated": "2026-07-09",
+  "forecast": [
+    {
+      "day": "Today",
+      "condition": "Partly Cloudy",
+      "temperature": 31,
+      "humidity": 76,
+      "wind": "14 km/h"
+    },
+    {
+      "day": "Tomorrow",
+      "condition": "Light Rain",
+      "temperature": 29,
+      "humidity": 82,
+      "wind": "18 km/h"
+    },
+    {
+      "day": "Saturday",
+      "condition": "Sunny",
+      "temperature": 32,
+      "humidity": 69,
+      "wind": "11 km/h"
+    }
+  ]
+}
