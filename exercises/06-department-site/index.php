@@ -21,7 +21,7 @@
     <section class="app-hero">
       <div>
         <p class="eyebrow">Exercise 06</p>
-        <h1>Computer Science Department</h1>
+        <h1>Department of Computer Science</h1>
         <p>A dynamic department website with home, login, registration, about, and dashboard pages.</p>
       </div>
     </section>
