@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 10 - Books jQuery Ajax</title>
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <header class="app-header">
+    <nav class="resume-nav">
+      <a class="back-link" href="../../index.html">Back to portfolio</a>
+      <span>Exercise 10</span>
+    </nav>
+    <section class="app-hero">
+      <div>
+        <p class="eyebrow">jQuery Ajax + JSON</p>
+        <h1>Book Information API</h1>
+        <p>Load book data from a JSON endpoint using the jQuery <code>$.ajax</code> method.</p>
+      </div>
+      <button class="primary-button button-reset" id="loadBooks" type="button">Load Books</button>
+    </section>
+  </header>
+
+  <main class="content-page">
+    <section class="book-grid" id="bookGrid" aria-live="polite">
+      <article class="form-panel wide-panel">
+        <h2>Books API Output</h2>
+        <p class="muted-text">Click Load Books to fetch book details from <code>books.json</code>.</p>
+      </article>
+    </section>
+  </main>
+  <script src="jquery-lite.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

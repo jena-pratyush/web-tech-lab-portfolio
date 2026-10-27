@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "category": "Programming",
+    "year": 2008
+  },
+  {
+    "title": "JavaScript: The Good Parts",
+    "author": "Douglas Crockford",
+    "category": "Web Development",
+    "year": 2008
+  },
+  {
+    "title": "HTML and CSS",
+    "author": "Jon Duckett",
+    "category": "Frontend",
+    "year": 2011
+  },
+  {
+    "title": "PHP and MySQL Web Development",
+    "author": "Luke Welling and Laura Thomson",
+    "category": "Backend",
+    "year": 2016
+  }
+]
