@@ -14,7 +14,7 @@
         <a href="index.php">Home</a>
         <a href="register.php">Register</a>
         <a href="login.php">Login</a>
-        <a href="../../index.html">Portfolio</a>
+        <a href="https://jena-pratyush.github.io/web-tech-lab-portfolio/">Portfolio</a>
       </div>
     </nav>
     <section class="app-hero">

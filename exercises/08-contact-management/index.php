@@ -13,7 +13,7 @@ $contacts = mysqli_query($conn, "SELECT * FROM contacts ORDER BY id DESC");
 <body>
   <header class="app-header">
     <nav class="resume-nav">
-      <a class="back-link" href="../../index.html">Back to portfolio</a>
+      <a class="back-link" href="https://jena-pratyush.github.io/web-tech-lab-portfolio/">Back to portfolio</a>
       <span>Exercise 08</span>
     </nav>
     <section class="app-hero">
